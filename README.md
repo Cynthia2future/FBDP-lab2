@@ -36,7 +36,7 @@
 
 ![任务一运行图](fig01.png)
 
-将输出结果保存在/output/output1文件中，并在终端显示输出结果：
+将输出结果保存在 `/output/output1`文件中，并在终端显示输出结果：
 
 ![任务一输出结果图](fig02.png)
 
@@ -61,15 +61,15 @@ java文件路径为 `/src/main/java/com/lab2/WeekdayCount.java`
 #### Reducer
   对相同星期几的流入量和流出量进行汇总，并计算它们的总和和平均值。
 
-  具体步骤如下：
+  **具体步骤如下**：
 
-    1.汇总流入量和流出量。遍历每个key（星期几和流入/流出类型）及其对应的values（资金流入或流出量）。根据key的类型（inflow或outflow），分别对流入量和流出量进行累加。与此同时，还要记录每个星期几的数据条数。
+  1.汇总流入量和流出量。遍历每个key（星期几和流入/流出类型）及其对应的values（资金流入或流出量）。根据key的类型（inflow或outflow），分别对流入量和流出量进行累加。与此同时，还要记录每个星期几的数据条数。
 
-    2.计算每个星期几的资金流入量和流出量的平均值。average_inflow = total_inflow / count
+  2.计算每个星期几的资金流入量和流出量的平均值。average_inflow = total_inflow / count
 
       average_outflow = total_outflow / count
 
-    3.将每个星期几的流入量和流出量的平均值写入输出，输出格式为<星期几, 平均流入量, 平均流出量>。
+  3.将每个星期几的流入量和流出量的平均值写入输出，输出格式为<星期几, 平均流入量, 平均流出量>。
 
 #### 排序
   在cleanup方法中，程序按照星期几的流入量进行降序排序，流入量最多的星期几排在最前面。排序使用Java 8的Stream API实现。
@@ -80,7 +80,7 @@ java文件路径为 `/src/main/java/com/lab2/WeekdayCount.java`
 
 ![任务二运行图](fig11.png)
 
-将输出结果保存在/output/output2文件中，并在终端显示输出结果：
+将输出结果保存在`/output/output2`文件中，并在终端显示输出结果：
 ![任务二输出结果图](fig12.png)
 
 在页面查看运行结果：
@@ -120,7 +120,7 @@ java文件路径为: ` /src/main/java/com/lab2/UserActivityCount.java`
 
 ## 运行结果
 
-运行hadoop程序，将最终的输出结果保存在 /output/sorted_output3 文件中。用cat命令输出文件内容，部分截图如下：
+运行hadoop程序，将最终的输出结果保存在` /output/sorted_output3 `文件中。用cat命令输出文件内容，部分截图如下：
 ![任务三输出结果图](fig21.png)
 
 ![任务三输出结果图](fig22.png)
@@ -168,7 +168,7 @@ java文件路径为: `/src/main/java/InterestImpactAnalysis.java`
 
 ![任务四输出结果图](fig31.png)
 
-将输出结果保存在/output/output4文件内。并用cat方法显示输出结果：
+将输出结果保存在`/output/output4`文件内。并用cat方法显示输出结果：
 
 ![任务四输出结果图](fig32.png)
 
